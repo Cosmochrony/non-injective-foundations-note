@@ -1,15 +1,523 @@
-%! Author = javarome
-%! Date = 04/06/2026
+\documentclass[11pt,a4paper]{article}
 
-% Preamble
-\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{doi}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
 
-% Packages
-\usepackage{amsmath}
+\geometry{margin=2.5cm}
 
-% Document
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+\theoremstyle{definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\Heis}{\mathrm{Heis}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\SPI}{S_\Pi}
+\newcommand{\cchi}{c_\chi}
+\newcommand{\Vr}{V_\rho}
+
+\title{The Non-Injective Foundations Sub-Programme\\[0.4em]
+\large Presentation Note 5}
+
+\author{J\'{e}r\^{o}me Beau\\[0.3em]
+\small Independent Researcher\\
+\small \texttt{jerome.beau@cosmochrony.org}}
+
+\date{2026}
+
 \begin{document}
 
+  \maketitle
 
+  \begin{abstract}
+    The non-injective foundations sub-programme establishes the axiomatic primitive of the
+    Cosmochrony corpus and answers a single central question: which structures are forced
+    once admissible non-injective projection is taken as primitive?
+    Starting from four axioms (A1--A4) governing admissible transitions between observable
+    states, the sub-programme derives as theorems --- not postulates --- the following:
+    the non-injectivity of $\Pi$ as a structural necessity of genuine emergence (ENI);
+    the discrete Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil
+    representation $\Vr$ as the unique admissible fibre structure (Foundation~M,
+    HeisenbergStructure);
+    and the absence of any independent dimensional parameter beyond $\cchi$ (noscale).
+    The sub-programme also provides the definitive liquidation of the preliminary vocabulary
+    of the white paper: $\chi$, relaxation, and iterated projection dynamics are not
+    postulates of the axiomatic formulation but emergent consequences of A1--A4.
+  \end{abstract}
+
+  \medskip
+  \noindent\textbf{Keywords.}
+  non-injective projection; axiomatic primitive; Heisenberg group; Weil representation;
+  admissibility; Born--Infeld; projection entropy; no-go theorem; emergence; foundations;
+  presentation note.
+
+  \newpage
+  \tableofcontents
+
+  \newpage
+
+  \section{Motivation and Central Question}
+    \label{sec:motivation}
+
+    The non-injective foundations sub-programme answers the following question.
+
+    \medskip
+    \noindent\textit{Central question.}
+    Is it possible to derive $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, its Weil representation,
+    the Born--Infeld saturation constraint, and the arrow of time as consequences of a
+    minimal set of structural axioms?
+    More precisely:
+    \textit{which structures are forced once admissible non-injective projection is taken
+    as the sole primitive?}
+
+    \medskip
+    The sub-programme answers: all of them.
+    Non-injectivity is not an interpretive option or a modelling choice.
+    It is a structural necessity of any genuinely emergent description (ENI).
+    The Heisenberg group structure is not introduced as a postulate; it is the unique
+    algebraic form compatible with the joint constraint of irreducibility (A3) and
+    projection locking (A4).
+    The BI saturation constraint is the unique bounded completion of the admissible
+    effective action.
+    The arrow of time follows from A1+A2 alone.
+    No background spacetime, no Hilbert space, and no quantum postulate are introduced
+    at this level.
+
+    \medskip
+    This note is the definitive entry point to the corpus for a reader who wants to understand
+    \emph{why} the specific structures of the other sub-programmes (spectral admissibility,
+    geometry, gauge, gravity) appear, rather than merely how they are used.
+
+  \section{Position in the Cosmochrony Programme}
+    \label{sec:position}
+
+    The non-injective foundations sub-programme is the axiomatic spine of the corpus.
+    It occupies Level~1 of the three-level architecture:
+    Level~1 (primitive), Level~2 (spectral fibre), Level~3 (physical observables).
+
+    Every other sub-programme takes one or more outputs of the foundations as inputs.
+    \begin{itemize}
+      \item Note~1 (Spectral Admissibility) takes $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $\Vr$,
+      the BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$, and the parity involution as given.
+      \item Note~2 (Emergent Geometry) takes $\Vr$ and the four-dimensional Carnot convergence
+      as the starting point of the Mosco limit.
+      \item Note~3 (Gauge Structure) takes the phase fibre and the non-injectivity of $\Pi$ as
+      the origin of gauge freedom.
+      \item Note~4 (Spectral Gravity) takes $\SPI > 0$ as the structural condition that forces
+      an effective gravitational sector.
+    \end{itemize}
+
+    None of these sub-programmes can be understood without the foundations.
+    The foundations sub-programme provides the \emph{reason} for the structures the other
+    sub-programmes compute.
+
+  \section{From the Preliminary Vocabulary to the Axiomatic Primitive}
+    \label{sec:vocab}
+
+    \begin{remark}[Vocabulary note: liquidation of the preliminary $\chi$ framework]
+      The white paper~\cite{Cosmochrony} introduced a substrate $\chi$, a relaxation
+      mechanism, and an iterated projection cascade $U_{t+1} = \Pi \circ \sigma(U_t)$ as
+      the engine of dynamics.
+      This vocabulary is superseded by the axiomatic formulation.
+
+      The axiomatic formulation retains the structural content while removing the dynamical
+      reading:
+      the primitive is not a substrate process, but the local structure of admissible
+      non-injective transitions.
+      The substrate $\chi$ is static; no relaxation mechanism is postulated at the
+      foundational level.
+      Observable evolution is an induced ordering of admissible projections, not a
+      dynamics of $\chi$ itself.
+      Relaxation and iteration appear as structural consequences of A1--A4, not as
+      independently postulated processes.
+
+      This liquidation is final: the term ``relaxation'' should not appear in any description of
+      the axiomatic framework, and $\chi$ should not be described as dynamical.
+      In all notes of this series (Notes~1--9), the admissibility constraint replaces the
+      earlier relaxation vocabulary.
+    \end{remark}
+
+  \section{Logical Chain of the Sub-Programme}
+    \label{sec:chain}
+
+    The sub-programme is organised around the following derivation chain:
+    \[
+      \text{A1--A4}
+      \;\Longrightarrow\;
+      \underbrace{\Pi \text{ non-injective},\; \SPI > 0}_{\text{ENI, Theorem~3}}
+      \;\Longrightarrow\;
+      \underbrace{[X,Y] \neq 0}_{\text{Foundation, Thm~5.4}}
+      \;\Longrightarrow\;
+      \underbrace{\Heis_3(\mathbb{Z}/q\mathbb{Z})}_{\text{Foundation, Thm~5.7}}
+      \;\Longrightarrow\;
+      \underbrace{\Vr}_{\text{HeisStr, Thm~4.1}}.
+    \]
+
+    Four structural implications.
+
+    \begin{enumerate}
+      \item \textit{Non-injectivity from genuine emergence (ENI~\cite{Beau2026l}).}
+      Given surjective $\Pi : \Omega \to O$ with $O$ not structurally isomorphic to $\Omega$
+      and no microstate-resolving structure beyond $\Pi$: $\Pi$ is necessarily non-injective
+      and $\SPI > 0$.
+      This is a framework-independent no-go theorem, proved from surjectivity, informational
+      completeness, and non-isomorphism alone.
+
+      \item \textit{Non-trivial commutator from A3 (Foundation~\cite{Beau2026m}).}
+      A3 (admissibility as non-premature selection) forces the irreducibility of the admissible
+      fibre $F_n$.
+      Any decomposition $F_n = F^{(1)} \oplus F^{(2)}$ stable under admissible generators is
+      forbidden prior to projection locking.
+      Irreducibility forces a non-trivial commutator $[X, \sigma(X)] = Z \neq 0$ between
+      conjugate admissible generators $X$ and $\sigma(X)$.
+
+      \item \textit{Heisenberg structure forced by A1--A3 and BI parity.}
+      The non-trivial commutator $[X, Y] = Z$ generates a three-dimensional nilpotent Lie
+      algebra.
+      The centre is generated by $Z$; its prime order $q$ is the spectral resolution parameter.
+      By the Stone--von Neumann uniqueness theorem, the unique irreducible unitary
+      representation of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ with central character $e^{2\pi i/q}$
+      is the Weil representation $\Vr$.
+
+      \item \textit{BI parity involution.}
+      Born--Infeld parity (BornInfeld~\cite{Beau2026c}) forces the minimal fibre condition
+      $\Pi^{-1}(y) \supseteq \{\chi, -\chi\}$.
+      Combined with A3, this closes the identification of $\Vr$ as the unique admissible fibre.
+    \end{enumerate}
+
+  \section{Constituent Papers}
+    \label{sec:papers}
+
+    \subsection{Non-injectivity as structural necessity: ENI}
+      \label{sec:eni}
+
+      \textbf{ENI}~\cite{Beau2026l} (Non-Injectivity as a Structural Necessity of Genuine
+  Emergence) is the foundational no-go theorem.
+
+      \textit{Main theorem} (Theorem~3; proved).
+      Any surjective $\Pi : \Omega \to O$ that is informationally complete for observables
+      and such that $O$ is not structurally isomorphic to $\Omega$ must be non-injective with
+      $\SPI > 0$.
+      The proof uses only surjectivity, informational completeness, and the non-isomorphism
+      condition; it is independent of any physical framework.
+
+      \textit{Categorical and informational reformulations} (§8).
+      Genuine emergence corresponds to a non-faithful functor.
+      The Kullback--Leibler divergence of any state distribution with respect to its projection
+      lift is strictly positive.
+
+      \textit{Corollary~6: Recursive non-injectivity} (v2; proved).
+      In any tower $\Omega_0 \xrightarrow{\Pi_1} \Omega_1 \xrightarrow{\Pi_2} \Omega_2$ of
+      genuinely distinct emergent levels, each $\Pi_i$ is non-injective with $S_{\Pi_i} > 0$,
+      and $S_{\Pi_2 \circ \Pi_1} \geq S_{\Pi_1}$.
+      Non-injectivity accumulates across levels: a framework with $k$ genuinely distinct
+      levels carries at least $k-1$ independent non-injective projections.
+
+      \textit{Structural colour confinement} (§6; structural).
+      The tower $\Omega_0 \to \{\text{individual sectors } c_i\} \to \{\text{colour-neutral pairs and triplets}\} \to \{\text{leptons, hadrons}\}$
+      instantiates Corollary~6 at the colour stratum.
+      The colour projection $\Pi_2: \{c_i\} \to \{\text{colour-neutral}\}$ is necessarily
+      non-injective.
+      The non-observability of free colour charges is therefore a structural consequence
+      of $S_{\Pi_2} > 0$, not a dynamical accident.
+
+      \textit{Algebraic complementary route} (Remark~5; structural).
+      In frameworks whose fibre carries a Heisenberg algebra $[X, Y] = Z \neq 0$, non-trivial
+      kernel and $\SPI > 0$ follow directly from the algebraic structure.
+      This is complementary to Theorem~3: the abstract no-go answers \emph{what} is forced;
+      the algebraic route answers \emph{why} in frameworks with Heisenberg fibres.
+
+    \subsection{Axiomatic foundation: Foundation~M}
+      \label{sec:foundation}
+
+      \textbf{Foundation~M}~\cite{Beau2026m} establishes the minimal axiomatic basis and
+      derives from A1--A4 alone the following chain of results.
+
+      The four axioms (§2):
+      \begin{itemize}
+        \item A1 (Local projective admissibility): there exists a non-empty set $F_n$ of admissible
+        successor directions from any observable state $O_{n-1}$.
+        \item A2 (Structural non-injectivity): distinct admissible directions may lead to the same
+        resolved state; $\Pi_n$ is generically non-injective.
+        \item A3 (Non-premature selection): an admissible transition preserves the full multiplicity
+        of open directions until projection locking; no premature selection among them is allowed.
+        \item A4 (Projection locking): resolution occurs only when continuous BI saturation meets
+        the discrete shell support; the transition from admissible to admitted is structurally discrete.
+      \end{itemize}
+
+      Derived results (proved):
+      \begin{itemize}
+        \item Irreversibility and the arrow of time (Proposition~4.1 and Theorem~4.2): from A1+A2
+        alone.
+        \item Proto-state as physically real unresolved configuration (Proposition~5.2): from A3.
+        \item Non-trivial commutator $[X, \sigma(X)] = Z \neq 0$ (Lemma~5.6 and its corollary):
+        from A3 and irreducibility.
+        \item Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ as symmetry group of $F_n$
+        (Theorem~5.7): from A1--A3 and BI parity.
+        \item $F_n \cong \Vr$ (Weil representation; stated in §5.4, detailed in HeisenbergStructure):
+        from Theorem~5.7 and Stone--von Neumann.
+        \item Discrete character of quantum transitions (Theorem~5.12): from A4 and O22.
+        \item Projective incompleteness (Corollary to Theorem~5.4): every admissible $\Pi_n$ has
+        non-trivial kernel; $[X, \sigma(X)] \neq 0$ structurally forbids trivial kernel.
+      \end{itemize}
+
+      Three roles of $\Pi_n$ (Remark~3.5; structural):
+      admissibility filter, generator of temporal order, and revelation operator.
+      These three roles are algebraically inseparable and all sourced in the non-commutativity.
+
+    \subsection{Heisenberg structure from admissibility: HeisenbergStructure}
+      \label{sec:heisstr}
+
+      \textbf{HeisenbergStructure}~\cite{Beau2026HeisenbergStructure} provides the detailed proof
+      of Foundation~M Theorem~5.7, omitted from Foundation for concision.
+      The central result (Theorem~4.1; proved):
+      \begin{quote}
+        Under A1--A3 and Born--Infeld parity, the symmetry group of $F_n$ is isomorphic to
+        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for some prime $q$, and $F_n \simeq \Vr$.
+      \end{quote}
+      The proof rests on a single structural lemma (Lemma~3.1: admissible non-factorisability),
+      followed by a chain of classification steps: non-trivial commutator, central commutator,
+      Heisenberg algebra, prime order of the centre, Stone--von Neumann identification.
+
+      As a corollary, the Heisenberg uncertainty principle is derived as a structural property
+      of the unresolved proto-state, not as an independent postulate.
+
+      The proof requires no input beyond A1--A3, BI parity, and classical group-classification
+      results.
+      It is entirely self-contained relative to Foundation~M and the BornInfeld paper.
+
+    \subsection{No external dimensional scale: noscale}
+      \label{sec:noscale}
+
+      \textbf{noscale}~\cite{Beau2026j} establishes a structural rigidity result:
+      the admissibility structure is closed under reparameterisations of $\cchi$ but not
+      under the introduction of independent dimensional parameters.
+
+      \textit{Main theorem} (Theorem~3.1; proved).
+      Any deformation of the admissibility constraints that introduces an independent
+      dimensional parameter $\lambda$ (with $[\lambda] \neq [\cchi]^k$ for any $k \in \mathbb{Q}$)
+      breaks at least one of:
+      (i) BFS-consistent spectral scaling of $\sigma_{\mathrm{pair}}(n)$;
+      (ii) structural non-injectivity (A2) and the ENI no-go;
+      (iii) bounded admissibility closure (A3--A4).
+
+      \textit{Corollary} (proved).
+      Dynamical fields carrying an independent dimensional coupling cannot be consistently
+      coupled to the projection $\Pi$.
+      In particular, a charge $Q$ with dimensions [charge] or a cosmological constant $\Lambda$
+      with dimensions [length]$^{-2}$ cannot enter the admissibility structure.
+      This provides the structural backing for the exclusion of Reissner--Nordstr\"{o}m and
+      Schwarzschild--de Sitter geometries in Q6b.
+
+      The Level~2 statement --- that every emergent scale is uniquely determined as a functional
+      of $\cchi$ and the cascade --- is identified as an open problem (§5 of noscale).
+
+      \begin{table}[ht]
+        \centering
+        \caption{Summary of constituent papers.
+        Status: P = proved; S = structural.}
+        \label{tab:papers}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{@{}lllll@{}}
+          \toprule
+          Paper & Central output & Status \\
+          \midrule
+          ENI & $\Pi$ non-injective $\Leftrightarrow$ $S_\Pi > 0$ $\Leftrightarrow$ genuine emergence & P \\
+          ENI Cor.~6 & Recursive non-injectivity; colour confinement structural & P / S \\
+          Foundation~M & A1--A4 $\Rightarrow$ $[X,Y]=Z\neq 0$ $\Rightarrow$ $\Heis_3$ $\Rightarrow$ $\Vr$ & P \\
+          HeisenbergStructure & Detailed proof of Thm~5.7; uncertainty principle from A3 & P \\
+          noscale & No independent dimensional parameter beyond $\cchi$ & P \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+
+  \section{Inputs from Upstream Results}
+    \label{sec:inputs}
+
+    The foundations sub-programme has no upstream dependencies within the corpus.
+    It is the axiomatic root.
+
+    The sole external input is the Born--Infeld uniqueness result of
+    BornInfeld~\cite{Beau2026c}: the BI saturation functional is the unique bounded
+    completion of the admissible effective action.
+    This is established independently of A1--A4 and is taken as given by the
+    foundations sub-programme when deriving the parity involution and the identification
+    of $\Vr$.
+
+  \section{Outputs to Downstream Branches}
+    \label{sec:outputs}
+
+    \begin{table}[ht]
+      \centering
+      \caption{Principal outputs and downstream consumers.}
+      \label{tab:outputs}
+      \renewcommand{\arraystretch}{1.3}
+      \begin{tabular}{@{}p{5.8cm}p{4.2cm}l@{}}
+        \toprule
+        Output & Consumer & Status \\
+        \midrule
+        $\Pi$ non-injective; $\SPI > 0$ & Note~4 (Gravity), Q12, Q13 & P \\
+        Arrow of time; irreversibility & Note~2 (Geometry), Q-series & P \\
+        $[X,Y] = Z \neq 0$ (non-commutativity) & Q1, Q2, HeisStr & P \\
+        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ as fibre group & All Notes 1--3 & P \\
+        $\Vr \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ (Weil repr.) & Notes 1--3; Q5a--Q11 & P \\
+        BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$ & Note~1, O-series & P \\
+        Parity involution $c \leftrightarrow q-c$ & Note~1, O18, O30 & P \\
+        No independent dimensional scale beyond $\cchi$ & Note~2 (noscale), Q6b & P \\
+        Colour confinement as structural necessity & ENI Cor.~6, O31, O32 & S \\
+        Projective incompleteness & Note~3 (gauge freedom) & P \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+  \section{Status of Results}
+    \label{sec:status}
+
+    \subsection{Proved results}
+      \label{sec:proved}
+
+      \begin{enumerate}
+        \item \textit{ENI Theorem~3}: $\Pi$ non-injective $\Leftrightarrow$ genuine emergence,
+        proved from surjectivity, informational completeness, non-isomorphism.
+        Framework-independent.
+
+        \item \textit{ENI Corollary~6}: recursive non-injectivity; any tower of $k$ distinct
+        emergent levels carries at least $k-1$ independent non-injective projections.
+
+        \item \textit{Irreversibility} (Foundation Proposition~4.1): from A1+A2; the arrow of time
+        is not postulated.
+
+        \item \textit{Temporal ordering} (Foundation Theorem~4.2): from irreversibility and novelty.
+
+        \item \textit{Non-factorisability Lemma~5.6} (Foundation/HeisenbergStructure): A3 forces
+        irreducibility of $F_n$; any stable decomposition prior to projection locking is forbidden.
+
+        \item \textit{Non-trivial commutator} (Foundation Corollary to Thm~5.4):
+        $[X, \sigma(X)] = Z \neq 0$ follows from irreducibility and the algebraic minimality of
+        the admissible generators.
+
+        \item \textit{$\Heis_3(\mathbb{Z}/q\mathbb{Z})$} (Foundation Theorem~5.7,
+        HeisenbergStructure Theorem~4.1): the fibre symmetry group is uniquely the Heisenberg
+        group of prime order; follows from the commutator structure and BI parity.
+
+        \item \textit{$F_n \cong \Vr$} (HeisenbergStructure Theorem~4.1):
+        Stone--von Neumann uniqueness of the irreducible representation with central character
+        $e^{2\pi i/q}$.
+
+        \item \textit{Uncertainty principle from A3} (HeisenbergStructure Corollary):
+        $\Delta X \cdot \Delta Y \geq \hbar_{\mathrm{eff}}/2$ is a structural property of the
+        unresolved proto-state; not an independent postulate.
+
+        \item \textit{Discrete transitions} (Foundation Theorem~5.12): from A4 and O22.
+
+        \item \textit{Projective incompleteness}: every admissible $\Pi_n$ has non-trivial kernel;
+        no observable description is ever complete.
+
+        \item \textit{No independent dimensional parameter} (noscale Theorem~3.1):
+        proved for all three cases (global multiplicative, depth-dependent, configuration-dependent
+        deformations).
+      \end{enumerate}
+
+    \subsection{Structural results}
+      \label{sec:structural}
+
+      \begin{enumerate}
+        \item \textit{Structural colour confinement} (ENI §6):
+        colour confinement as a projective necessity of the emergence tower.
+        The quantitative dynamics of confinement (string tension, running coupling) is not
+        derived here; only the structural necessity of non-observability is established.
+
+        \item \textit{Three roles of $\Pi_n$} (Foundation Remark~3.5):
+        admissibility filter, generator of temporal order, revelation operator.
+        These roles are algebraically inseparable and all sourced in non-commutativity.
+
+        \item \textit{Gauge freedom as projective redundancy}:
+        gauge freedom is not a separately postulated symmetry principle; it is the residual
+        fibre symmetry of the non-injective projection.
+        This is structurally stated in Foundation and detailed in Note~3.
+
+        \item \textit{Level~2 scale determination} (noscale §5; open):
+        that every emergent scale is uniquely determined as a functional of $\cchi$ and the
+        cascade is identified as an open structural problem, beyond the Level~1 rigidity proved
+        in noscale.
+      \end{enumerate}
+
+    \subsection{Open hypotheses}
+      \label{sec:open-hyp}
+
+      \begin{enumerate}
+        \item \textit{Born rule for general observables.}
+        The Born rule is proved in the SU(2) sector for the co-admissible spin-$\tfrac{3}{2}$
+        sector on $2I$~\cite{Beau2026q3}.
+        Extension to arbitrary observables, multipartite systems, and continuous spectra
+        requires extending the fibre structure beyond the two-element parity case.
+
+        \item \textit{Full Hilbert structure from discrete fibre.}
+        The passage from the discrete $\Vr \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ to a continuous
+        Hilbert space is handled by the Q5a continuum limit.
+        The foundations sub-programme does not derive this passage; it delegates it to
+        the Emergent Geometry sub-programme.
+
+        \item \textit{Level~2 scale determination (noscale)}.
+        That all emergent scales (masses, coupling constants, cosmological constant) are
+        uniquely determined from $\cchi$ is open.
+        Only Level~1 (no independent scale can be introduced without breaking admissibility)
+        is proved.
+      \end{enumerate}
+
+  \section{Open Deliverables}
+    \label{sec:open}
+
+    Two open deliverables bound the sub-programme.
+
+    \textbf{Open deliverable 1: Born rule for general observables.}
+    The born rule is established within the SU(2) sector.
+    Its extension to arbitrary observables and to multipartite systems at the level of the
+    foundations axioms is the primary open structural problem of this sub-programme.
+
+    \textbf{Open deliverable 2: Level~2 scale determination.}
+    Proving that every emergent scale is uniquely determined from $\cchi$ and the cascade
+    (noscale Level~2) would make the framework fully predictive with a single dimensional
+    free parameter.
+    This requires a structural argument that the present programme does not yet have.
+
+  \section{Conclusion}
+    \label{sec:conclusion}
+
+    The non-injective foundations sub-programme derives the axiomatic primitive of the
+    Cosmochrony corpus.
+    Starting from four axioms (A1--A4) governing admissible transitions, it establishes
+    as theorems: the structural necessity of non-injectivity (ENI); the arrow of time
+    and irreversibility; the Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its
+    Weil representation $\Vr$ as the unique admissible fibre; and the absence of any
+    independent dimensional parameter beyond $\cchi$.
+
+    The white-paper vocabulary of $\chi$, relaxation, and iterated projection is superseded.
+    The substrate is static; the admissibility constraint replaces relaxation throughout the
+    corpus.
+
+    These results are the inputs consumed silently by every other sub-programme.
+    Reading the corpus without this note is possible but the origin of each structural
+    input remains opaque.
+    This note makes that origin explicit: every structure that the other sub-programmes
+    compute is a theorem of A1--A4, not an independent assumption.
+
+    \newpage
+    \bibliographystyle{plain}
+    \bibliography{cosmochrony-bibliography}
 
 \end{document}
