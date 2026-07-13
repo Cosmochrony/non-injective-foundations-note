@@ -1,5 +1,5 @@
 This repository contains the source of the **Non-Injective Foundations Presentation Note** of the Cosmochrony programme
-[*The Non-Injective Foundations Sub-Programme (Presentation Note 5)*](out/NonInjectiveFoundationsNote.pdf).
+*The Non-Injective Foundations Sub-Programme (Presentation Note 5)*.
 
 This note synthesises the **non-injective foundations sub-programme**, the axiomatic spine of the Cosmochrony corpus. Starting from four axioms (A1--A4) governing admissible transitions between observable states, it derives as **theorems** --- not postulates --- the structural necessity of non-injectivity, the irreversibility of observable evolution, the discrete Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation $V_\rho$ as the unique admissible fibre, and the absence of any independent dimensional parameter beyond $c_{\mathrm{BI}}$.
 
