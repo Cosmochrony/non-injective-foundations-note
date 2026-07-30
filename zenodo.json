@@ -3,6 +3,7 @@
   "web_url": "https://cosmochrony.org/science/non-injective/",
   "publication_type": "workingpaper",
   "main_tex": "tex/NonInjectiveFoundationsNote.tex",
+  "release_notes": "Corrects the status of the Heisenberg/Weil carrier-selection claim. A finite S3 countermodel shows that the published centrality inference does not follow from the preceding admissibility properties. ENI and independent results are unchanged; the Heisenberg/Weil carrier and downstream consumers are now labelled conditional.",
   "zenodo_id": 20548383,
   "doi": "10.5281/zenodo.20548383"
 }
