@@ -17,10 +17,9 @@
 \geometry{margin=2.5cm}
 
 \hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  citecolor=black,
-  urlcolor=black
+  hidelinks,
+  pdftitle={The Non-Injective Foundations Sub-Programme: Presentation Note 5},
+  pdfauthor={Jérôme Beau}
 }
 
 \theoremstyle{definition}
@@ -31,7 +30,8 @@
 \newcommand{\su}{\mathfrak{su}}
 \newcommand{\SPI}{S_\Pi}
 \newcommand{\cchi}{c_{\mathrm{BI}}}
-\newcommand{\Vr}{V_\rho}
+\newcommand{\Hc}{\mathcal{H}_c}
+\newcommand{\pic}{\pi_c}
 
 \title{The Non-Injective Foundations Sub-Programme\\[0.4em]
 \large Presentation Note 5}
@@ -40,7 +40,7 @@
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026}
+\date{2026\\[2pt]\small Version 1.5}
 
 \begin{document}
 
@@ -52,11 +52,13 @@
     structural necessity of genuine emergence, while other constituent results address
     temporal ordering and dimensional rigidity under explicit assumptions.  By contrast,
     the published inference from admissibility axioms to
-    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation is not a theorem.
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its representation data is not a theorem.
     A finite $S_3$ countermodel satisfies the algebraic properties available before the
-    centrality step but has a non-central commutator.  The Heisenberg/Weil carrier must
-    therefore be treated as a supplied realization, and downstream results that consume it
-    are conditional on that choice.  Conceptually, non-injectivity remains the programme's
+    centrality step but has a non-central commutator.  Once the group and a non-trivial central
+    character are supplied, Stone--von Neumann identifies the Heisenberg/Schr\"odinger
+    representation; the associated Weil action remains distinct further symplectic data.
+    Downstream results that consume these inputs are conditional on those choices.
+    Conceptually, non-injectivity remains the programme's
     primitive; the selection of its physical carrier remains open.
   \end{abstract}
 
@@ -78,7 +80,8 @@
 
     \medskip
     \noindent\textit{Central question.}
-    Is it possible to derive $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, its Weil representation,
+    Is it possible to derive $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, its Schr\"odinger representation
+    and associated Weil action,
     the Born--Infeld saturation constraint, and the arrow of time as consequences of a
     minimal set of structural axioms?
     More precisely:
@@ -92,7 +95,8 @@
     The arrow of time follows within Foundation from A1+A2, and the no-scale result supplies
     a separate conditional rigidity theorem.
     However, A1--A3 and BI parity do not select the Heisenberg group: the finite countermodel
-    of HeisenbergCarrierObstruction~\cite{Beau2026hco} blocks the centrality step.
+    incorporated into HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}
+    blocks the centrality step.
     The BI capacity bound is itself the explicit axiom [A-cap].
     No background spacetime or Hilbert space is introduced at this level, but a
     Heisenberg/Weil carrier used downstream is an additional supplied realization.
@@ -111,10 +115,13 @@
 
     Other sub-programmes take one or more outputs or supplied realizations from this layer.
     \begin{itemize}
-      \item Note~1 (Spectral Admissibility) takes $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $\Vr$,
-      the BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$, and the parity involution as given.
-      \item Note~2 (Emergent Geometry) takes $\Vr$ and the four-dimensional Carnot convergence
-      as the starting point of the Mosco limit.
+      \item Note~1 (Spectral Admissibility) takes $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, its
+      Schr\"odinger carrier $\Hc$, and the associated Weil action as separately supplied data,
+      together with the BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$ and the parity involution.
+      \item Note~2 (Emergent Geometry) takes the supplied spectral carrier and the
+      four-dimensional Carnot convergence as geometric inputs. The former Q5a Mosco
+      derivation is withdrawn in version~3.2; the non-trivial spatial limit is the open
+      hypothesis [H-L].
       \item Note~3 (Gauge Structure) takes the phase fibre and the non-injectivity of $\Pi$ as
       the origin of gauge freedom.
       \item Note~4 (Spectral Gravity) takes $\SPI > 0$ as the structural condition that forces
@@ -172,7 +179,8 @@
       G\simeq\Heis_3(\mathbb{Z}/q\mathbb{Z}).
     \]
     Supplying the Heisenberg group and a non-trivial central character does permit the usual
-    Stone--von Neumann representation-theoretic step to $\Vr$.
+    Stone--von Neumann step to the irreducible Heisenberg/Schr\"odinger representation $\pic$ on
+    $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$. It does not by itself supply the associated Weil action.
 
     Four status-separated statements organise the sub-programme.
 
@@ -193,7 +201,7 @@
       out a commuting pair of admissible generators.
 
       \item \textit{Carrier-selection obstruction
-      (HeisenbergCarrierObstruction~\cite{Beau2026hco}).}
+      (HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}).}
       A non-trivial commutator does not establish centrality, nilpotency, prime central order,
       or the Heisenberg presentation.  The explicit $S_3$ model satisfies the preceding
       algebraic properties while its commutator is non-central.  It therefore refutes the
@@ -201,8 +209,10 @@
 
       \item \textit{Conditional Heisenberg/Weil realization.}
       If $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
-      Stone--von Neumann theory identifies the corresponding irreducible carrier.  This
-      representation-theoretic implication survives; its antecedent is not derived.
+      Stone--von Neumann theory identifies the corresponding irreducible Heisenberg representation
+      $\pic$ on $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$. The Weil representation is a distinct associated
+      symplectic action on that carrier and must be supplied or constructed through additional
+      intertwiner data. The Stone--von Neumann implication survives; its antecedent is not derived.
       The BI parity involution is likewise an input from the adopted capacity axiom and its
       candidate action, not a repair of the missing centrality step.
     \end{enumerate}
@@ -280,9 +290,10 @@
         from A3 and irreducibility.
         \item Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ as symmetry group of $F_n$
         (Theorem~5.7): not proved; the centrality step is refuted by the $S_3$ countermodel.
-        \item $F_n \cong \Vr$ (Weil representation; stated in §5.4, detailed in
-        HeisenbergStructure): conditional on supplying the Heisenberg group and central
-        character.
+        \item $F_n \cong \Hc$ carrying the irreducible Heisenberg representation $\pic$
+        (stated in §5.4, detailed in HeisenbergStructure): conditional on supplying the
+        Heisenberg group and central character.  The associated Weil action is separate further
+        symplectic data, not a consequence of Stone--von Neumann.
         \item Discrete character of quantum transitions (Theorem~5.12): from A4 and O22.
         \item Projective incompleteness (Corollary to Theorem~5.4): every admissible $\Pi_n$ has
         non-trivial kernel; $[X, \sigma(X)] \neq 0$ structurally forbids trivial kernel.
@@ -300,19 +311,21 @@
       Its central claim was:
       \begin{quote}
         Under A1--A3 and Born--Infeld parity, the symmetry group of $F_n$ is isomorphic to
-        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for some prime $q$, and $F_n \simeq \Vr$.
+        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for some prime $q$, and $F_n$ carries the claimed
+        representation data.
       \end{quote}
       This is not proved.  The proof promotes a non-trivial commutator to a central one
       without a valid implication and reverses the use of Schur's lemma when arguing for
-      prime central order.  The Stone--von Neumann conclusion remains valid only after the
-      Heisenberg group and a non-trivial central character are supplied.
+      prime central order.  Stone--von Neumann identifies $\pic$ on $\Hc$ only after the
+      Heisenberg group and a non-trivial central character are supplied; the associated Weil
+      action remains separate further data.
       Consequently, the stated Heisenberg uncertainty relation is conditional on that
       supplied carrier rather than a consequence of A3 alone.
 
     \subsection{Finite carrier-selection obstruction}
       \label{sec:hco}
 
-      \textbf{HeisenbergCarrierObstruction}~\cite{Beau2026hco} isolates the failed inference.
+      HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure} isolates the failed inference.
       Let $G=S_3$, let $X=(12)$ and $Y=(23)$, and let the involution be conjugation by
       $(13)$.  Then the involution exchanges $X$ and $Y$, the pair minimally generates $G$,
       and the standard two-dimensional zero-sum representation is faithful, unitary, and
@@ -374,16 +387,17 @@
     \label{sec:inputs}
 
     ENI has no upstream dependency within the corpus.
-    The wider foundations synthesis is not dependency-free because it also imports the
-    Born--Infeld candidate and its capacity axiom.
+    The wider foundations synthesis is not dependency-free. It imports separately supplied
+    finite-Heisenberg carrier data (group and non-trivial central character), the associated
+    Weil action as further symplectic data, and the Born--Infeld candidate with its capacity axiom.
 
-    The sole external input is the Born--Infeld candidate of
-    BornInfeld~\cite{Beau2026c}: the capacity bound is stated there as the explicit
+    The sole additional physical-model input beyond those supplied representation-theoretic data is
+    the Born--Infeld candidate of BornInfeld~\cite{Beau2026c}: the capacity bound is stated there as the explicit
     axiom [A-cap], and the BI saturation functional is the saturation candidate
     adopted with it.
-    This input is independent of A1--A4 and is taken as an explicit hypothesis by the
-    foundations sub-programme when deriving the parity involution and the identification
-    of a Heisenberg/Weil realization.  It does not establish that this realization is selected.
+    This input is independent of A1--A4 and is adopted as an explicit hypothesis when defining
+    the parity involution inside the supplied Heisenberg/Weil realisation. It neither identifies
+    nor selects that realisation from the foundational axioms.
 
   \section{Outputs to Downstream Branches}
     \label{sec:outputs}
@@ -401,7 +415,8 @@
         Arrow of time; irreversibility & Note~2 (Geometry), Q-series & P \\
         $[X,Y] \neq e$ (within the Foundation formalisation) & Q1, Q2, HeisStr & S \\
         Heisenberg fibre group (supplied) & All Notes 1--3 & C \\
-        $\Vr \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ (Weil repr.) & Notes 1--3; Q5a--Q11 & C \\
+        $\pic$ on $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$ (Heisenberg/Schr\"odinger repr.) & Notes 1--3; Q5a--Q11 & C \\
+        Associated Weil action on $\Hc$ (separate symplectic data) & Notes 1--3; O-series & C \\
         BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$ & Note~1, O-series & Axiom \\
         Parity involution $c \leftrightarrow q-c$ (candidate fibre structure;
         conjugation identity proved, O17) & Note~1, O18, O30 & S \\
@@ -439,12 +454,13 @@
         the admissible generators.
 
         \item \textit{Finite carrier-selection obstruction}
-        (HeisenbergCarrierObstruction): the $S_3$ construction proves that the properties
+        (HeisenbergStructure version~2.1): the $S_3$ construction proves that the properties
         available before the centrality step do not imply a Heisenberg group.
 
-        \item \textit{Conditional representation theorem}: once
-        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
-        Stone--von Neumann theory identifies the corresponding irreducible representation.
+      \item \textit{Conditional representation theorem}: once
+      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
+        Stone--von Neumann theory identifies the corresponding irreducible Heisenberg representation
+        $\pic$ on $\Hc$. It does not itself supply the associated Weil action.
 
         \item \textit{Discrete transitions} (Foundation Theorem~5.12): from A4 and O22.
 
@@ -494,16 +510,17 @@
         an explicit model choice.  No current result closes this bridge.
 
         \item \textit{Born rule for general observables.}
-        The Born rule is proved in the SU(2) sector for the co-admissible spin-$\tfrac{3}{2}$
-        sector on $2I$~\cite{Beau2026q3}.
-        Extension to arbitrary observables, multipartite systems, and continuous spectra
-        requires extending the fibre structure beyond the two-element parity case.
+        Q3 derives a singlet state and correlator only under an explicit diagonal-$2I$
+        invariance hypothesis that is not established~\cite{Beau2026q3}.
+        The Born rule remains open, including in that sector; arbitrary observables,
+        multipartite systems, and continuous spectra require additional structure.
 
         \item \textit{Full Hilbert structure from discrete fibre.}
-        The passage from the discrete $\Vr \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ to a continuous
-        Hilbert space is handled by the Q5a continuum limit.
-        The foundations sub-programme does not derive this passage; it delegates it to
-        the Emergent Geometry sub-programme.
+        The passage from the discrete Schr\"odinger carrier
+        $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$ to a continuous
+        Hilbert space is not derived. Q5a version 3.2 proves a zero-form/no-go result for
+        its canonical filtration and leaves the non-trivial spatial limit [H-L] open.
+        The foundations sub-programme therefore treats this passage as an unclosed bridge.
 
         \item \textit{Level~2 scale determination (noscale)}.
         That all emergent scales (masses, coupling constants, cosmological constant) are
@@ -522,9 +539,10 @@
     Heisenberg/Weil carrier, or retain it as a declared model assumption.
 
     \textbf{Open deliverable 2: Born rule for general observables.}
-    The born rule is established within the SU(2) sector.
-    Its extension to arbitrary observables and to multipartite systems at the level of the
-    foundations axioms is the primary open structural problem of this sub-programme.
+    The Born rule is not established by Q1--Q3; Q3's singlet and correlator are conditional
+    on an unestablished diagonal-$2I$ invariance hypothesis.
+    Deriving the rule for any sector, and then for arbitrary observables and multipartite systems,
+    is a primary open structural problem of this sub-programme.
 
     \textbf{Open deliverable 3: Level~2 scale determination.}
     Proving that every emergent scale is uniquely determined from $\cchi$ and the cascade
@@ -538,9 +556,12 @@
     This sub-programme examines the axiomatic primitive of the Cosmochrony corpus.
     ENI establishes the structural necessity of non-injectivity under explicit hypotheses,
     while other constituent papers develop temporal ordering and dimensional rigidity.
-    The finite $S_3$ countermodel shows that the Heisenberg group and its Weil representation
-    are not uniquely derived from A1--A3 and BI parity.  They remain a supplied realization,
-    and results that consume them must be read conditionally.
+    The finite $S_3$ countermodel shows that the Heisenberg group is not uniquely derived from
+    A1--A3 and BI parity.  Supplying that group and a central character permits
+    Stone--von Neumann to identify the Heisenberg/Schr\"odinger representation $\pic$ on $\Hc$;
+    the associated Weil action remains distinct further symplectic data. Both the group input and
+    the Weil action are supplied in the downstream model, so results that consume them must be read
+    conditionally.
 
     The white-paper vocabulary of $\chi$, relaxation, and iterated projection is superseded.
     The substrate is static; the admissibility constraint replaces relaxation throughout the
