@@ -97,10 +97,10 @@
     It is a structural necessity of any genuinely emergent description (ENI).
     Within Foundation, A1+A2 give immediate information loss along non-injective transitions;
     the arrow of time follows only under the acyclicity hypothesis [H-acyc], which is not
-    established.  The no-scale result supplies a separate conditional rigidity theorem.
+    established.  The no-scale result supplies a separate rigidity theorem, proved under its
+    stated hypotheses.
     However, A1--A3 and BI parity do not select the Heisenberg group: the finite countermodel
-    incorporated into HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}
-    blocks the centrality step.
+    of HeisenbergStructure~\cite{Beau2026HeisenbergStructure} blocks the centrality step.
     The BI capacity bound is itself the explicit axiom [A-cap].
     No background spacetime or Hilbert space is introduced at this level, but the Heisenberg
     group, Schr\"odinger carrier and associated Weil action used downstream are additional
@@ -175,8 +175,9 @@
       \underbrace{\Pi \text{ non-injective},\; \SPI > 0}_{\text{ENI, Theorem~3}}
     \]
     These are ENI's own hypotheses; ENI does not require A1--A4.  A separate route in Foundation
-    obtains non-commuting admissible generators from irreducibility, itself conditional on a
-    representation-theoretic dictionary for $F_n$.
+    obtains non-commuting admissible generators from irreducibility when the pair generates the
+    acting group, the irreducibility itself being conditional on a representation-theoretic
+    dictionary for $F_n$.
     The next identification does not follow:
     \[
       [X,Y]\neq e
@@ -205,10 +206,10 @@
       any decomposition $F_n = F^{(1)} \oplus F^{(2)}$ stable under admissible generators is
       forbidden prior to projection locking.
       On a fibre of dimension greater than one, irreducibility rules out a commuting pair of
-      admissible generators.
+      admissible generators when that pair generates the acting group.
 
       \item \textit{Carrier-selection obstruction
-      (HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}).}
+      (HeisenbergStructure~\cite{Beau2026HeisenbergStructure}).}
       A non-trivial commutator does not establish centrality, nilpotency, prime central order,
       or the Heisenberg presentation.  The explicit $S_3$ model satisfies the preceding
       algebraic properties while its commutator is non-central.  It therefore refutes the
@@ -241,11 +242,11 @@
       condition; it is independent of any physical framework.
 
       \textit{Categorical and informational reformulations} (§8).
-      Genuine emergence corresponds to a non-faithful functor.
-      The Kullback--Leibler divergence of any state distribution with respect to its projection
-      lift is strictly positive.
+      Genuine emergence corresponds to a non-faithful functor (Theorem~7).
+      Every non-degenerate distribution $p$ on $\Omega$ has strictly positive projection entropy,
+      $S_\Pi(p) = H(p) - H(\Pi_* p) > 0$ when both entropies are finite (Corollary~8).
 
-      \textit{Corollary~6: Recursive non-injectivity} (v2; proved).
+      \textit{Corollary~6: Recursive non-injectivity} (proved).
       In any tower $\Omega_0 \xrightarrow{\Pi_1} \Omega_1 \xrightarrow{\Pi_2} \Omega_2$ of
       genuinely distinct emergent levels, each $\Pi_i$ is non-injective with $S_{\Pi_i} > 0$,
       and $S_{\Pi_2 \circ \Pi_1} \geq S_{\Pi_1}$.
@@ -261,12 +262,6 @@
       non-injective.
       The non-observability of free colour charges is therefore a structural consequence
       of $S_{\Pi_2} > 0$, not a dynamical accident.
-
-      \textit{Algebraic complementary route} (Remark~5; structural).
-      In frameworks whose fibre carries a Heisenberg algebra $[X, Y] = Z \neq 0$, non-trivial
-      kernel and $\SPI > 0$ follow directly from the algebraic structure.
-      This is complementary to Theorem~3: the abstract no-go answers \emph{what} is forced;
-      the algebraic route answers \emph{why} in frameworks with Heisenberg fibres.
 
     \subsection{Axiomatic foundation: Foundation~M}
       \label{sec:foundation}
@@ -388,7 +383,7 @@
           \toprule
           Paper & Central output & Status \\
           \midrule
-          ENI & $\Pi$ non-injective $\Leftrightarrow$ $S_\Pi > 0$ $\Leftrightarrow$ genuine emergence & P \\
+          ENI & Genuine emergence $\Rightarrow$ $\Pi$ non-injective $\Leftrightarrow$ $S_\Pi > 0$ & P \\
           ENI Cor.~6 & Recursive non-injectivity; colour confinement structural & P / S \\
           Foundation~M & Immediate information loss; temporal order under [H-acyc];
           carrier-selection obstruction & P / C / P \\
@@ -411,16 +406,22 @@
     the Born--Infeld candidate of BornInfeld~\cite{Beau2026c}: the capacity bound is stated there as the explicit
     axiom [A-cap], and the BI saturation functional is the saturation candidate
     adopted with it.
-    This input is independent of A1--A4 and is adopted as an explicit hypothesis when defining
-    the parity involution on the supplied Heisenberg carrier and Weil action. It neither identifies
-    nor selects that realisation from the foundational axioms.
+    This input is independent of A1--A4.
+    The parity involution $c \leftrightarrow q-c$ is defined on the central-character labels of the
+    supplied carrier; reading it as Born--Infeld parity is an open identification, since O18
+    establishes Born--Infeld parity as a covariance of the response family and leaves the fibre
+    identification open.
+    The Born--Infeld input neither identifies nor selects the supplied carrier from the
+    foundational axioms.
 
   \section{Outputs to Downstream Branches}
     \label{sec:outputs}
 
     \begin{table}[ht]
       \centering
-      \caption{Principal outputs and downstream consumers.}
+      \caption{Principal outputs and downstream consumers.
+      Status: P = proved; S = structural; C = conditional; supplied = model input;
+      Axiom = adopted axiom.}
       \label{tab:outputs}
       \renewcommand{\arraystretch}{1.3}
       \begin{tabular}{@{}p{5.8cm}p{4.2cm}l@{}}
@@ -430,10 +431,11 @@
         $\Pi$ non-injective; $\SPI > 0$ & Note~4 (Gravity), Q12, Q13 & P \\
         Immediate information loss along non-injective transitions & Note~2 (Geometry), Q-series & P \\
         Arrow of time (temporal order under [H-acyc]) & Note~2 (Geometry), Q-series & C \\
-        $[X,Y] \neq e$ (under the representation dictionary, $\dim F_n > 1$) & Q1, Q2, HeisStr & C \\
-        Heisenberg fibre group (supplied) & All Notes 1--3 & C \\
+        $[X,Y] \neq e$ (under the representation dictionary, $\dim F_n > 1$, $\langle X,Y\rangle$
+        acting) & Q1, Q2, HeisStr & C \\
+        Heisenberg fibre group (supplied) & All Notes 1--3 & supplied \\
         $\pic$ on $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$ (Heisenberg/Schr\"odinger repr.) & Notes 1--3; Q5a--Q11 & C \\
-        Associated Weil action on $\Hc$ (separate symplectic data) & Notes 1--3; O-series & C \\
+        Associated Weil action on $\Hc$ (separate symplectic data) & Notes 1--3; O-series & supplied \\
         BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$ & Note~1, O-series & Axiom \\
         Parity involution $c \leftrightarrow q-c$ (candidate fibre structure;
         conjugation identity proved, O17) & Note~1, O18, O30 & S \\
@@ -451,8 +453,8 @@
       \label{sec:proved}
 
       \begin{enumerate}
-        \item \textit{ENI Theorem~3}: $\Pi$ non-injective $\Leftrightarrow$ genuine emergence,
-        proved from surjectivity, informational completeness, non-isomorphism.
+        \item \textit{ENI Theorem~3}: genuine emergence $\Rightarrow$ $\Pi$ non-injective with
+        $\SPI > 0$, proved from surjectivity, informational completeness, non-isomorphism.
         Framework-independent.
 
         \item \textit{ENI Corollary~6}: recursive non-injectivity; any tower of $k$ distinct
@@ -466,13 +468,8 @@
         $\dim F_n > 1$, then $X$ and $\sigma(X)$ do not commute.
 
         \item \textit{Finite carrier-selection obstruction}
-        (HeisenbergStructure version~2.1): the $S_3$ construction proves that the properties
+        (HeisenbergStructure): the $S_3$ construction proves that the properties
         available before the centrality step do not imply a Heisenberg group.
-
-        \item \textit{Conditional representation theorem}: once
-        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
-        Stone--von Neumann theory identifies the corresponding irreducible Heisenberg representation
-        $\pic$ on $\Hc$. It does not itself supply the associated Weil action.
 
         \item \textit{Discrete transitions} (Foundation Theorem~5.12): under A3 and A4, after O22.
 
@@ -524,6 +521,11 @@
         \item \textit{Irreducibility of $F_n$} (Foundation Lemma~5.6): from A1--A3, conditional on
         a representation-theoretic dictionary for $F_n$ (HeisenbergStructure Remark~3.2).
         The non-commutation of the admissible generators inherits this condition.
+
+        \item \textit{Heisenberg representation} (HeisenbergStructure Proposition~4.8): conditional
+        on supplying $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character, after
+        which Stone--von Neumann theory identifies the irreducible Heisenberg representation $\pic$
+        on $\Hc$.  It does not itself supply the associated Weil action.
 
         \item \textit{Robertson uncertainty bound} (HeisenbergStructure Corollary~5.1): conditional
         on a supplied Hilbert carrier and self-adjoint observables; its physical reading requires an
