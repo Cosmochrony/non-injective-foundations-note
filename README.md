@@ -43,9 +43,12 @@ on those choices.
   countermodel and selects a central extension, or retain the carrier as an explicit model
   choice.
 - **Born rule:** derive it in any sector; Q3's singlet and correlator are conditional on an
-  unestablished diagonal-(2I) invariance hypothesis and do not establish the Born rule.
-- **Continuous Hilbert limit:** supply the open non-trivial spatial-limit bridge [H-L]; Q5a
-  version 3.2 instead proves the zero-form/no-go result for its canonical filtration.
+  unestablished diagonal-\(2I\) invariance hypothesis and do not establish the Born rule.
+- **Continuous Hilbert limit:** supply a spatial second-order limit operator, the unestablished
+  hypothesis [H-L] of [Q5b](https://doi.org/10.5281/zenodo.19686700). On its canonical Fourier
+  filtration, [Q5a](https://doi.org/10.5281/zenodo.19642369) proves that the published
+  admissibility form converges to the zero form and, under its depth and weight hypotheses, that
+  no common scalar normalisation yields a non-trivial toric differential operator.
 - **Level 2 scale determination:** determine whether emergent scales are fixed from
   \(c_{\mathrm{BI}}\) and the remaining structure.
 

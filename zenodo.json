@@ -2,9 +2,8 @@
   "bib_key": "Beau2026ninote",
   "web_url": "https://cosmochrony.org/science/non-injective/",
   "publication_type": "workingpaper",
-  "version": "1.5",
   "main_tex": "tex/NonInjectiveFoundationsNote.tex",
-  "notes": "Version 1.5 synchronises the carrier-selection correction with HeisenbergStructure version 2.1. The finite S3 countermodel is no longer inventoried or cited as a separate HCO record: it is cited through the current HeisenbergStructure concept DOI 10.5281/zenodo.19635395. Stone-von Neumann is now typed exactly: after the Heisenberg group and a non-trivial central character are supplied, it identifies the Heisenberg/Schrodinger representation pi_c on H_c=L2(Z/qZ); the associated Weil action is distinct further symplectic data. The version 1.4 H-rank documentary correction remains in force: the parity-involution fibre reading is structural, while the conjugation identity itself is proved. No independent result is promoted.",
+  "notes": "Version 1.5 synchronises the carrier-selection correction with HeisenbergStructure version 2.1. The finite S3 countermodel is no longer inventoried or cited as a separate HCO record: it is cited through the current HeisenbergStructure concept DOI 10.5281/zenodo.19635395. Stone-von Neumann is now typed exactly: after the Heisenberg group and a non-trivial central character are supplied, it identifies the Heisenberg/Schrodinger representation pi_c on H_c=L2(Z/qZ); the associated Weil action is distinct further symplectic data. The version 1.4 H-rank documentary correction remains in force: the parity-involution fibre reading is structural, while the conjugation identity itself is proved. The continuum-limit statements now cite their sources: Q5a (zero-form Mosco limit on the canonical Fourier filtration; normalisation no-go under its depth and weight hypotheses) and Q5b, which names the unestablished spatial-limit hypothesis [H-L]. No independent result is promoted.",
   "zenodo_id": 20548383,
   "doi": "10.5281/zenodo.20548383"
 }
