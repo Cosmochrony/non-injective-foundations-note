@@ -19,7 +19,9 @@
 \hypersetup{
   hidelinks,
   pdftitle={The Non-Injective Foundations Sub-Programme: Presentation Note 5},
-  pdfauthor={Jérôme Beau}
+  pdfauthor={Jérôme Beau},
+  pdfkeywords={non-injective projection, axiomatic primitive, Heisenberg group, Weil representation,
+    admissibility, Born--Infeld, projection entropy, no-go theorem, emergence, foundations, presentation note}
 }
 
 \theoremstyle{definition}
@@ -47,11 +49,12 @@
   \maketitle
 
   \begin{abstract}
-    This note presents the non-injective foundations sub-programme and corrects the status of
+    This note presents the non-injective foundations sub-programme and types the status of
     its carrier-selection claim.  The ENI no-go theorem establishes non-injectivity as a
     structural necessity of genuine emergence, while other constituent results address
-    temporal ordering and dimensional rigidity under explicit assumptions.  By contrast,
-    the published inference from admissibility axioms to
+    dimensional rigidity under explicit assumptions and temporal ordering conditionally on an
+    unestablished acyclicity hypothesis.  By contrast,
+    the inference from admissibility axioms to
     $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its representation data is not a theorem.
     A finite $S_3$ countermodel satisfies the algebraic properties available before the
     centrality step but has a non-central commutator.  Once the group and a non-trivial central
@@ -92,14 +95,16 @@
     The sub-programme answers this question only in part.
     Non-injectivity is not an interpretive option or a modelling choice.
     It is a structural necessity of any genuinely emergent description (ENI).
-    The arrow of time follows within Foundation from A1+A2, and the no-scale result supplies
-    a separate conditional rigidity theorem.
+    Within Foundation, A1+A2 give immediate information loss along non-injective transitions;
+    the arrow of time follows only under the acyclicity hypothesis [H-acyc], which is not
+    established.  The no-scale result supplies a separate conditional rigidity theorem.
     However, A1--A3 and BI parity do not select the Heisenberg group: the finite countermodel
     incorporated into HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}
     blocks the centrality step.
     The BI capacity bound is itself the explicit axiom [A-cap].
-    No background spacetime or Hilbert space is introduced at this level, but a
-    Heisenberg/Weil carrier used downstream is an additional supplied realization.
+    No background spacetime or Hilbert space is introduced at this level, but the Heisenberg
+    group, Schr\"odinger carrier and associated Weil action used downstream are additional
+    supplied data.
 
     \medskip
     This note is the definitive entry point to the corpus for a reader who wants to understand
@@ -113,7 +118,7 @@
     It occupies Level~1 of the three-level architecture:
     Level~1 (primitive), Level~2 (spectral fibre), Level~3 (physical observables).
 
-    Other sub-programmes take one or more outputs or supplied realizations from this layer.
+    Other sub-programmes take one or more outputs or supplied realisations from this layer.
     \begin{itemize}
       \item Note~1 (Spectral Admissibility) takes $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, its
       Schr\"odinger carrier $\Hc$, and the associated Weil action as separately supplied data,
@@ -130,8 +135,8 @@
     \end{itemize}
 
     The distinction matters: ENI is a proved reason for non-injectivity, whereas the
-    Heisenberg/Weil carrier is presently an input to, not an output proved for, the downstream
-    calculations.
+    Heisenberg group, its Schr\"odinger carrier and the associated Weil action are inputs to, not
+    outputs proved for, the downstream calculations.
 
   \section{From the Preliminary Vocabulary to the Axiomatic Primitive}
     \label{sec:vocab}
@@ -157,7 +162,7 @@
       This liquidation is final: the term ``relaxation'' should not appear in any description of
       the axiomatic framework, and $\chi$ should not be described as dynamical.
       In all notes of this series (Notes~1--9), the admissibility constraint replaces the
-      earlier relaxation vocabulary.
+      relaxation vocabulary of the white paper.
     \end{remark}
 
   \section{Logical Chain of the Sub-Programme}
@@ -165,12 +170,13 @@
 
     The audited logical structure is:
     \[
-      \text{A1--A4}
+      \text{surjectivity, observables defined by }\Pi\text{, non-isomorphism}
       \;\Longrightarrow\;
       \underbrace{\Pi \text{ non-injective},\; \SPI > 0}_{\text{ENI, Theorem~3}}
     \]
-    ENI has its own hypotheses and does not require A1--A4.  A separate route in Foundation
-    motivates non-commuting admissible generators under its irreducibility formalisation.
+    These are ENI's own hypotheses; ENI does not require A1--A4.  A separate route in Foundation
+    obtains non-commuting admissible generators from irreducibility, itself conditional on a
+    representation-theoretic dictionary for $F_n$.
     The next identification does not follow:
     \[
       [X,Y]\neq e
@@ -194,21 +200,21 @@
       completeness, and non-isomorphism alone.
 
       \item \textit{Non-trivial commutator route (Foundation~\cite{Beau2026m}).}
-      A3 (admissibility as non-premature selection) forces the irreducibility of the admissible
-      fibre $F_n$.
-      Any decomposition $F_n = F^{(1)} \oplus F^{(2)}$ stable under admissible generators is
+      Under a representation-theoretic dictionary for the admissible fibre $F_n$, A3
+      (admissibility as non-premature selection) forces its irreducibility:
+      any decomposition $F_n = F^{(1)} \oplus F^{(2)}$ stable under admissible generators is
       forbidden prior to projection locking.
-      Within the paper's algebraic formalisation, irreducibility and minimal generation rule
-      out a commuting pair of admissible generators.
+      On a fibre of dimension greater than one, irreducibility rules out a commuting pair of
+      admissible generators.
 
       \item \textit{Carrier-selection obstruction
       (HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}).}
       A non-trivial commutator does not establish centrality, nilpotency, prime central order,
       or the Heisenberg presentation.  The explicit $S_3$ model satisfies the preceding
       algebraic properties while its commutator is non-central.  It therefore refutes the
-      published carrier-selection inference.
+      carrier-selection inference.
 
-      \item \textit{Conditional Heisenberg/Weil realization.}
+      \item \textit{Conditional Heisenberg representation.}
       If $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
       Stone--von Neumann theory identifies the corresponding irreducible Heisenberg representation
       $\pic$ on $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$. The Weil representation is a distinct associated
@@ -224,8 +230,8 @@
     \subsection{Non-injectivity as structural necessity: ENI}
       \label{sec:eni}
 
-      \textbf{ENI}~\cite{Beau2026l} (Non-Injectivity as a Structural Necessity of Genuine
-  Emergence) is the foundational no-go theorem.
+      \textbf{ENI}~\cite{Beau2026l} (Non-Injectivity and Strict Information Loss in Projective
+      Effective Descriptions) is the foundational no-go theorem.
 
       \textit{Main theorem} (Theorem~3; proved).
       Any surjective $\Pi : \Omega \to O$ that is informationally complete for observables
@@ -266,7 +272,8 @@
       \label{sec:foundation}
 
       \textbf{Foundation~M}~\cite{Beau2026m} proposes a minimal axiomatic basis and develops
-      several consequences.  Its carrier-selection theorem is corrected below.
+      several consequences.  It also states where the foundation stops short of carrier selection:
+      its Theorem~5.7 is the obstruction to Heisenberg carrier selection.
 
       The four axioms (§2):
       \begin{itemize}
@@ -282,51 +289,49 @@
         admissible to admitted is structurally discrete.
       \end{itemize}
 
-      Results and claims, with corrected status:
+      Results and claims, with their status:
       \begin{itemize}
-        \item Irreversibility and the arrow of time (Proposition~4.1 and Theorem~4.2): from A1+A2
-        alone.
-        \item Proto-state as physically real unresolved configuration (Proposition~5.2): from A3.
-        \item Non-trivial commutator $[X, \sigma(X)] = Z \neq 0$ (Lemma~5.6 and its corollary):
-        from A3 and irreducibility.
-        \item Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ as symmetry group of $F_n$
-        (Theorem~5.7): not proved; the centrality step is refuted by the $S_3$ countermodel.
+        \item Immediate information loss (Proposition~4.1; proved): every admissible transition
+        whose realisation map is non-injective, the generic case under A2, loses information in its
+        immediate image.  Permanent non-recovery is not established (Remark~4.2).
+        \item Temporal order (Theorem~4.4; conditional): along non-injective transitions, the
+        observable states carry a canonical strict partial order under the acyclicity hypothesis
+        [H-acyc], which is not established.  The arrow of time is therefore a conditional
+        consequence, not a proved one.
+        \item Structural indeterminacy of the proto-state (Proposition~5.2): from A1 and A3.
+        \item Irreducibility of $F_n$ (Lemma~5.6): conditional, since A1--A3 yield it only
+        together with a representation-theoretic dictionary for $F_n$.
+        \item Non-commutation $[X, \sigma(X)] \neq 1$: on a fibre of dimension greater than one,
+        irreducibility implies it (HeisenbergStructure Proposition~4.2); from A3 it is therefore
+        conditional on the same dictionary.
+        \item Obstruction to Heisenberg carrier selection (Theorem~5.7; proved): the
+        non-commutation does not make the commutator central, so the carrier contract does
+        not select $\Heis_3(\mathbb{Z}/q\mathbb{Z})$; the $S_3$ countermodel exhibits the failure.
         \item $F_n \cong \Hc$ carrying the irreducible Heisenberg representation $\pic$
-        (stated in §5.4, detailed in HeisenbergStructure): conditional on supplying the
+        (Stone--von Neumann, detailed in HeisenbergStructure): conditional on supplying the
         Heisenberg group and central character.  The associated Weil action is separate further
         symplectic data, not a consequence of Stone--von Neumann.
-        \item Discrete character of quantum transitions (Theorem~5.12): from A4 and O22.
-        \item Projective incompleteness (Corollary to Theorem~5.4): every admissible $\Pi_n$ has
-        non-trivial kernel; $[X, \sigma(X)] \neq 0$ structurally forbids trivial kernel.
+        \item Discrete character of quantum transitions (Theorem~5.12): under A3 and A4, after O22.
+        \item Projective incompleteness (Corollary~4.9; proved): under A2, an admissible
+        non-injective realisation map has a non-trivial fibre, hence $\ker \Pi_n \neq \{0\}$ when
+        it is represented linearly.  No commutator or carrier-selection theorem is needed.
       \end{itemize}
 
-      Three roles of $\Pi_n$ (Remark~3.5; structural):
+      Three roles of $\Pi_n$ (Remark~3.1; structural):
       admissibility filter, generator of temporal order, and revelation operator.
-      These three roles are algebraically inseparable and all sourced in the non-commutativity.
+      These roles are distinct, each irreducible to the others.  The filter role rests on the
+      constraints of A1--A3 and on Corollary~4.9; the temporal role holds only under [H-acyc]
+      (Theorem~4.4).
 
-    \subsection{Heisenberg structure from admissibility: HeisenbergStructure}
+    \subsection{Finite carrier-selection obstruction: HeisenbergStructure}
       \label{sec:heisstr}
-
-      \textbf{HeisenbergStructure}~\cite{Beau2026HeisenbergStructure} gives the detailed
-      published argument for Foundation~M Theorem~5.7.
-      Its central claim was:
-      \begin{quote}
-        Under A1--A3 and Born--Infeld parity, the symmetry group of $F_n$ is isomorphic to
-        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for some prime $q$, and $F_n$ carries the claimed
-        representation data.
-      \end{quote}
-      This is not proved.  The proof promotes a non-trivial commutator to a central one
-      without a valid implication and reverses the use of Schur's lemma when arguing for
-      prime central order.  Stone--von Neumann identifies $\pic$ on $\Hc$ only after the
-      Heisenberg group and a non-trivial central character are supplied; the associated Weil
-      action remains separate further data.
-      Consequently, the stated Heisenberg uncertainty relation is conditional on that
-      supplied carrier rather than a consequence of A3 alone.
-
-    \subsection{Finite carrier-selection obstruction}
       \label{sec:hco}
 
-      HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure} isolates the failed inference.
+      \textbf{HeisenbergStructure}~\cite{Beau2026HeisenbergStructure} audits the algebraic step from
+      A1--A3 and Born--Infeld parity to $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
+      It extracts the contract available before the centrality step (a finite, faithful,
+      irreducible, unitary action generated by a minimal pair exchanged by an involution) and
+      proves that this contract does not select a Heisenberg carrier (Theorem~4.1).
       Let $G=S_3$, let $X=(12)$ and $Y=(23)$, and let the involution be conjugation by
       $(13)$.  Then the involution exchanges $X$ and $Y$, the pair minimally generates $G$,
       and the standard two-dimensional zero-sum representation is faithful, unitary, and
@@ -335,8 +340,17 @@
         [X,Y]=(132)\notin Z(S_3),
       \]
       since $Z(S_3)$ is trivial.  Thus the algebraic properties used before the centrality
-      step do not select a Heisenberg group.  This is a proved obstruction to the published
-      derivation, not a proposal that $S_3$ is the physical carrier.
+      step do not select a Heisenberg group.  This is a proved obstruction to the selection
+      inference, not a proposal that $S_3$ is the physical carrier.
+      A separate application of Schur's lemma shows that irreducibility does not force a central
+      subgroup to have prime order (Proposition~4.7).
+      Stone--von Neumann remains a conditional endpoint: once the Heisenberg group and a
+      non-trivial central character are supplied, it identifies $\pic$ on $\Hc$
+      (Proposition~4.8); the associated Weil action is a further representation of the
+      symplectic automorphism group and is not supplied by that step.
+      The Robertson uncertainty bound holds on a supplied Hilbert carrier with self-adjoint
+      observables (Corollary~5.1); reading it as a physical measurement principle requires an
+      observable dictionary in addition to the carrier.
 
     \subsection{No external dimensional scale: noscale}
       \label{sec:noscale}
@@ -367,18 +381,19 @@
       \begin{table}[ht]
         \centering
         \caption{Summary of constituent papers.
-        Status: P = proved; S = structural; C = conditional; R = refuted claim.}
+        Status: P = proved; S = structural; C = conditional; supplied = model input.}
         \label{tab:papers}
         \renewcommand{\arraystretch}{1.2}
-        \begin{tabular}{@{}lllll@{}}
+        \begin{tabular}{@{}lp{8.2cm}l@{}}
           \toprule
           Paper & Central output & Status \\
           \midrule
           ENI & $\Pi$ non-injective $\Leftrightarrow$ $S_\Pi > 0$ $\Leftrightarrow$ genuine emergence & P \\
           ENI Cor.~6 & Recursive non-injectivity; colour confinement structural & P / S \\
-          Foundation~M & Axioms, temporal ordering, and proposed carrier selection & S / R \\
-          HeisenbergStructure & Heisenberg/Weil carrier once supplied & R / C \\
-          Carrier obstruction & Finite $S_3$ countermodel to carrier selection & P \\
+          Foundation~M & Immediate information loss; temporal order under [H-acyc];
+          carrier-selection obstruction & P / C / P \\
+          HeisenbergStructure & Finite $S_3$ obstruction; Schr\"odinger representation once group and
+          central character are supplied; Weil action separate & P / C / supplied \\
           noscale & No independent dimensional parameter beyond $\cchi$ & P \\
           \bottomrule
         \end{tabular}
@@ -397,7 +412,7 @@
     axiom [A-cap], and the BI saturation functional is the saturation candidate
     adopted with it.
     This input is independent of A1--A4 and is adopted as an explicit hypothesis when defining
-    the parity involution inside the supplied Heisenberg/Weil realisation. It neither identifies
+    the parity involution on the supplied Heisenberg carrier and Weil action. It neither identifies
     nor selects that realisation from the foundational axioms.
 
   \section{Outputs to Downstream Branches}
@@ -413,8 +428,9 @@
         Output & Consumer & Status \\
         \midrule
         $\Pi$ non-injective; $\SPI > 0$ & Note~4 (Gravity), Q12, Q13 & P \\
-        Arrow of time; irreversibility & Note~2 (Geometry), Q-series & P \\
-        $[X,Y] \neq e$ (within the Foundation formalisation) & Q1, Q2, HeisStr & S \\
+        Immediate information loss along non-injective transitions & Note~2 (Geometry), Q-series & P \\
+        Arrow of time (temporal order under [H-acyc]) & Note~2 (Geometry), Q-series & C \\
+        $[X,Y] \neq e$ (under the representation dictionary, $\dim F_n > 1$) & Q1, Q2, HeisStr & C \\
         Heisenberg fibre group (supplied) & All Notes 1--3 & C \\
         $\pic$ on $\Hc=L^2(\mathbb{Z}/q\mathbb{Z})$ (Heisenberg/Schr\"odinger repr.) & Notes 1--3; Q5a--Q11 & C \\
         Associated Weil action on $\Hc$ (separate symplectic data) & Notes 1--3; O-series & C \\
@@ -423,7 +439,7 @@
         conjugation identity proved, O17) & Note~1, O18, O30 & S \\
         No independent dimensional scale beyond $\cchi$ & Note~2 (noscale), Q6b & P \\
         Colour confinement as structural necessity & ENI Cor.~6, O31, O32 & S \\
-        Projective incompleteness & Note~3 (gauge freedom) & P \\
+        Projective incompleteness (non-injective steps, A2) & Note~3 (gauge freedom) & P \\
         \bottomrule
       \end{tabular}
     \end{table}
@@ -442,31 +458,26 @@
         \item \textit{ENI Corollary~6}: recursive non-injectivity; any tower of $k$ distinct
         emergent levels carries at least $k-1$ independent non-injective projections.
 
-        \item \textit{Irreversibility} (Foundation Proposition~4.1): from A1+A2; the arrow of time
-        is not postulated.
+        \item \textit{Immediate information loss} (Foundation Proposition~4.1): a non-injective
+        admissible transition, the generic case under A2, loses information in its immediate image.
 
-        \item \textit{Temporal ordering} (Foundation Theorem~4.2): from irreversibility and novelty.
-
-        \item \textit{Non-factorisability Lemma~5.6} (Foundation/HeisenbergStructure): A3 forces
-        irreducibility of $F_n$; any stable decomposition prior to projection locking is forbidden.
-
-        \item \textit{Non-trivial commutator} (Foundation Corollary to Thm~5.4):
-        $[X, \sigma(X)] = Z \neq 0$ follows from irreducibility and the algebraic minimality of
-        the admissible generators.
+        \item \textit{Non-commutation from irreducibility} (HeisenbergStructure Proposition~4.2):
+        if the unitary action of $\langle X, \sigma(X)\rangle$ on $F_n$ is irreducible and
+        $\dim F_n > 1$, then $X$ and $\sigma(X)$ do not commute.
 
         \item \textit{Finite carrier-selection obstruction}
         (HeisenbergStructure version~2.1): the $S_3$ construction proves that the properties
         available before the centrality step do not imply a Heisenberg group.
 
-      \item \textit{Conditional representation theorem}: once
-      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
+        \item \textit{Conditional representation theorem}: once
+        $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and a non-trivial central character are supplied,
         Stone--von Neumann theory identifies the corresponding irreducible Heisenberg representation
         $\pic$ on $\Hc$. It does not itself supply the associated Weil action.
 
-        \item \textit{Discrete transitions} (Foundation Theorem~5.12): from A4 and O22.
+        \item \textit{Discrete transitions} (Foundation Theorem~5.12): under A3 and A4, after O22.
 
-        \item \textit{Projective incompleteness}: every admissible $\Pi_n$ has non-trivial kernel;
-        no observable description is ever complete.
+        \item \textit{Projective incompleteness} (Foundation Corollary~4.9): under A2, a
+        non-injective admissible realisation map has a non-trivial fibre.
 
         \item \textit{No independent dimensional parameter} (noscale Theorem~3.1):
         proved for all three cases (global multiplicative, depth-dependent, configuration-dependent
@@ -477,18 +488,20 @@
       \label{sec:structural}
 
       \begin{enumerate}
-        \item \textit{Heisenberg/Weil realization}:
-        the carrier is a coherent and productive supplied realization, but its selection from
-        A1--A3 and BI parity is open.  Results downstream of this input are conditional on it.
+        \item \textit{Supplied Heisenberg carrier and Weil action}:
+        the Heisenberg group, its Schr\"odinger carrier and the associated Weil action form a coherent
+        and productive supplied realisation, but their selection from A1--A3 and BI parity is open.
+        Results downstream of these inputs are conditional on them.
 
         \item \textit{Structural colour confinement} (ENI §6):
         colour confinement as a projective necessity of the emergence tower.
         The quantitative dynamics of confinement (string tension, running coupling) is not
         derived here; only the structural necessity of non-observability is established.
 
-        \item \textit{Three roles of $\Pi_n$} (Foundation Remark~3.5):
+        \item \textit{Three roles of $\Pi_n$} (Foundation Remark~3.1):
         admissibility filter, generator of temporal order, revelation operator.
-        These roles are algebraically inseparable and all sourced in non-commutativity.
+        These roles are distinct, each irreducible to the others; the temporal role holds only
+        under [H-acyc].
 
         \item \textit{Gauge freedom as projective redundancy}:
         gauge freedom is not a separately postulated symmetry principle; it is the residual
@@ -501,18 +514,34 @@
         in noscale.
       \end{enumerate}
 
+    \subsection{Conditional results}
+      \label{sec:conditional}
+
+      \begin{enumerate}
+        \item \textit{Temporal order and the arrow of time} (Foundation Theorem~4.4):
+        conditional on the acyclicity hypothesis [H-acyc], which is not established.
+
+        \item \textit{Irreducibility of $F_n$} (Foundation Lemma~5.6): from A1--A3, conditional on
+        a representation-theoretic dictionary for $F_n$ (HeisenbergStructure Remark~3.2).
+        The non-commutation of the admissible generators inherits this condition.
+
+        \item \textit{Robertson uncertainty bound} (HeisenbergStructure Corollary~5.1): conditional
+        on a supplied Hilbert carrier and self-adjoint observables; its physical reading requires an
+        observable dictionary.
+      \end{enumerate}
+
     \subsection{Open hypotheses}
       \label{sec:open-hyp}
 
       \begin{enumerate}
         \item \textit{Carrier selection.}
         Find additional, independently motivated hypotheses that exclude the $S_3$
-        countermodel and select a central extension, or state the Heisenberg/Weil carrier as
-        an explicit model choice.  No current result closes this bridge.
+        countermodel and select a central extension, or state the Heisenberg group, Schr\"odinger
+        carrier and Weil action as an explicit model choice.  No result in the corpus closes this bridge.
 
-        \item \textit{Born rule for general observables.}
-        Q3 derives a singlet state and correlator only under an explicit diagonal-$2I$
-        invariance hypothesis that is not established~\cite{Beau2026q3}.
+        \item \textit{Born rule.}
+        Q3 derives a singlet state and correlator only on a supplied bipartite carrier and under an
+        explicit diagonal-$2I$ invariance hypothesis that is not established~\cite{Beau2026q3}.
         The Born rule remains open, including in that sector; arbitrary observables,
         multipartite systems, and continuous spectra require additional structure.
 
@@ -541,11 +570,13 @@
 
     \textbf{Open deliverable 1: carrier selection.}
     Derive a physically and mathematically explicit condition that selects the
-    Heisenberg/Weil carrier, or retain it as a declared model assumption.
+    Heisenberg group, Schr\"odinger carrier and Weil action, or retain them as a declared model
+    assumption.
 
-    \textbf{Open deliverable 2: Born rule for general observables.}
-    The Born rule is not established by Q1--Q3; Q3's singlet and correlator are conditional
-    on an unestablished diagonal-$2I$ invariance hypothesis.
+    \textbf{Open deliverable 2: Born rule.}
+    The Born rule is not established in any sector; Q3's singlet and correlator are conditional
+    on a supplied bipartite carrier and an unestablished diagonal-$2I$ invariance
+    hypothesis~\cite{Beau2026q3}.
     Deriving the rule for any sector, and then for arbitrary observables and multipartite systems,
     is a primary open structural problem of this sub-programme.
 
@@ -553,14 +584,15 @@
     Proving that every emergent scale is uniquely determined from $\cchi$ and the cascade
     (noscale Level~2) would make the framework fully predictive with a single dimensional
     free parameter.
-    This requires a structural argument that the present programme does not yet have.
+    This requires a structural argument that no result in the corpus supplies.
 
   \section{Conclusion}
     \label{sec:conclusion}
 
     This sub-programme examines the axiomatic primitive of the Cosmochrony corpus.
     ENI establishes the structural necessity of non-injectivity under explicit hypotheses,
-    while other constituent papers develop temporal ordering and dimensional rigidity.
+    while other constituent papers develop dimensional rigidity and a temporal ordering that is
+    conditional on the unestablished acyclicity hypothesis [H-acyc].
     The finite $S_3$ countermodel shows that the Heisenberg group is not uniquely derived from
     A1--A3 and BI parity.  Supplying that group and a central character permits
     Stone--von Neumann to identify the Heisenberg/Schr\"odinger representation $\pic$ on $\Hc$;
@@ -575,7 +607,7 @@
     These results are the inputs consumed silently by every other sub-programme.
     Reading the corpus without this note is possible but the origin of each structural
     input remains opaque.
-    This note now makes the mixed status explicit: proved no-go results, structural
+    This note makes the mixed status explicit: proved no-go results, structural
     interpretations, supplied carriers, and open identifications are distinct.  The
     conceptual lesson is not that exploration should stop, but that an identification must
     not be promoted to a theorem merely because the calculations behind it are sound.
