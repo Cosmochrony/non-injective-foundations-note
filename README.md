@@ -36,7 +36,7 @@ on those choices.
 | ENI | Non-injectivity as a necessity of genuine emergence | proved |
 | ENI Corollary 6 | Recursive non-injectivity; structural colour-confinement reading | proved / structural |
 | Foundation M | Immediate information loss; temporal order under [H-acyc]; carrier-selection obstruction (Theorem 5.7) | proved / conditional / proved |
-| HeisenbergStructure 2.1 | Finite \(S_3\) obstruction; Schrödinger representation once group and central character are supplied; Weil action separate | obstruction proved / representation conditional / Weil action supplied |
+| HeisenbergStructure 2.1 | Finite \(S_3\) obstruction; Schrödinger representation once group and non-trivial central character are supplied; Weil action separate | obstruction proved / representation conditional / Weil action supplied |
 | noscale | No independent dimensional parameter beyond \(c_{\mathrm{BI}}\) | proved under stated hypotheses |
 
 ## Open deliverables
