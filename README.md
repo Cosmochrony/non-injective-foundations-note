@@ -2,12 +2,16 @@
 
 Source for *The Non-Injective Foundations Sub-Programme (Presentation Note 5)*.
 
-Version 1.5 aligns the note with Foundation version 2.2 and HeisenbergStructure version 2.1.
+The note is aligned with Foundation version 2.6 and HeisenbergStructure version 2.1.
 The ENI no-go theorem establishes non-injectivity under explicit hypotheses. Within Foundation,
 A1 and A2 give immediate information loss along non-injective transitions; the arrow of time
 follows only under the acyclicity hypothesis [H-acyc], which is not established. Irreducibility
-of the admissible fibre is conditional on a representation-theoretic dictionary, and A1--A3 and
-Born--Infeld parity do not derive the discrete Heisenberg group. Once that group and a
+of the admissible fibre is conditional on a representation-theoretic dictionary and on an additional
+sector reading of A3, not derived, on which a decomposition stable under the admissible generators counts
+as premature selection. The discreteness of quantum transitions is postulated by Foundation's A4, not
+derived; on the supplied Heisenberg shell realisation a realised saturation depth is an integer (O22), and
+the existence of such a depth is not established. A1--A3 and Born--Infeld parity do not derive the discrete
+Heisenberg group. Once that group and a
 non-trivial central character are supplied, Stone--von Neumann identifies the Heisenberg/Schrödinger representation on
 \(L^2(\mathbb Z/q\mathbb Z)\); the associated Weil action is distinct further symplectic data.
 
