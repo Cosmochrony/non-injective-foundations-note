@@ -52,8 +52,8 @@
     This note presents the non-injective foundations sub-programme and types the status of
     its carrier-selection claim.  The ENI no-go theorem establishes non-injectivity as a
     structural necessity of genuine emergence, while other constituent results address
-    dimensional rigidity under explicit assumptions and temporal ordering conditionally on an
-    unestablished acyclicity hypothesis.  By contrast,
+    temporal ordering conditionally on an unestablished acyclicity hypothesis; a dimensional rigidity
+    claim (no-scale) has been withdrawn and is open.  By contrast,
     the inference from admissibility axioms to
     $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its representation data is not a theorem.
     A finite $S_3$ countermodel satisfies the algebraic properties available before the
@@ -97,8 +97,8 @@
     It is a structural necessity of any genuinely emergent description (ENI).
     Within Foundation, A1+A2 give immediate information loss along non-injective transitions;
     the arrow of time follows only under the acyclicity hypothesis [H-acyc], which is not
-    established.  The no-scale result supplies a separate rigidity theorem, proved under its
-    stated hypotheses.
+    established.  The no-scale note no longer claims a rigidity theorem: its Level~1 statement is
+    withdrawn and open, and only dimensional observations under a supplied dimensional assignment remain.
     However, A1--A3 and BI parity do not select the Heisenberg group: the finite countermodel
     of HeisenbergStructure~\cite{Beau2026HeisenbergStructure} blocks the centrality step.
     The BI capacity bound is itself the explicit axiom [A-cap].
@@ -360,33 +360,30 @@
     \subsection{No external dimensional scale: noscale}
       \label{sec:noscale}
 
-      \textbf{noscale}~\cite{Beau2026j} establishes a structural rigidity result:
-      the admissibility structure is closed under reparameterisations of $\cchi$ but not
-      under the introduction of independent dimensional parameters.
+      \textbf{noscale}~\cite{Beau2026j} (version~2.0) is a status correction.
+      Its version~1 claimed a Level~1 theorem: any deformation of the admissibility constraints
+      that introduces a dimensional parameter independent of $\cchi$ breaks spectral scaling,
+      structural non-injectivity or bounded closure, with a corollary excluding
+      Reissner--Nordstr\"{o}m and Schwarzschild--de Sitter exteriors.
+      The theorem, the corollary and the application are withdrawn: the proof used premises that the
+      cited papers do not contain, and each case had internal gaps.
+      The failure of the proof does not decide the question; Level~1 is open.
 
-      \textit{Main theorem} (Theorem~3.1; proved).
-      Any deformation of the admissibility constraints that introduces an independent
-      dimensional parameter $\lambda$ (with $[\lambda] \neq [\cchi]^k$ for any $k \in \mathbb{Q}$)
-      breaks at least one of:
-      (i) BFS-consistent spectral scaling of $\sigma_{\mathrm{pair}}(n)$;
-      (ii) structural non-injectivity (A2) and the ENI no-go;
-      (iii) bounded admissibility closure (A3--A4).
-
-      \textit{Corollary} (proved).
-      Dynamical fields carrying an independent dimensional coupling cannot be consistently
-      coupled to the projection $\Pi$.
-      In particular, a charge $Q$ with dimensions [charge] or a cosmological constant $\Lambda$
-      with dimensions [length]$^{-2}$ cannot enter the admissibility structure.
-      This provides the structural backing for the exclusion of Reissner--Nordstr\"{o}m and
-      Schwarzschild--de Sitter geometries in Q6b.
+      \textit{What remains.}
+      The model does not fix the physical dimension of $\cchi$, so independent dimensional
+      parameters are defined only relative to a supplied dimensional assignment.
+      Under such an assignment, a constant factor in the bound that depends only on a parameter
+      whose dimension lies outside the span of the bound's ingredients is constant, and a
+      dimensionless factor rescales $\cchi$.
 
       The Level~2 statement --- that every emergent scale is uniquely determined as a functional
-      of $\cchi$ and the cascade --- is identified as an open problem (§5 of noscale).
+      of $\cchi$ and the cascade --- is open, as is Level~1.
 
       \begin{table}[ht]
         \centering
         \caption{Summary of constituent papers.
-        Status: P = proved; S = structural; C = conditional; supplied = model input.}
+        Status: P = proved; S = structural; C = conditional; supplied = model input;
+        open = not established.}
         \label{tab:papers}
         \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{@{}lp{8.2cm}l@{}}
@@ -399,7 +396,8 @@
           carrier-selection obstruction & P / C / P \\
           HeisenbergStructure & Finite $S_3$ obstruction; Schr\"odinger representation once group and
           non-trivial central character are supplied; Weil action separate & P / C / supplied \\
-          noscale & No independent dimensional parameter beyond $\cchi$ & P \\
+          noscale & Level~1 rigidity withdrawn (open); homogeneity observation under a supplied
+          dimensional assignment & open / P \\
           \bottomrule
         \end{tabular}
       \end{table}
@@ -450,7 +448,6 @@
         BI bound $A_n \leq \cchi/\sqrt{\lambda_n}$ & Note~1, O-series & Axiom \\
         Parity involution $c \leftrightarrow q-c$ (candidate fibre structure;
         conjugation identity proved, O17) & Note~1, O18, O30 & S \\
-        No independent dimensional scale beyond $\cchi$ & Note~2 (noscale), Q6b & P \\
         Colour confinement as structural necessity & ENI Cor.~6, O31, O32 & S \\
         Projective incompleteness (non-injective steps, A2) & Note~3 (gauge freedom) & P \\
         \bottomrule
@@ -485,9 +482,11 @@
         \item \textit{Projective incompleteness} (Foundation Corollary~4.9): under A2, a
         non-injective admissible realisation map has a non-trivial fibre.
 
-        \item \textit{No independent dimensional parameter} (noscale Theorem~3.1):
-        proved for all three cases (global multiplicative, depth-dependent, configuration-dependent
-        deformations).
+        \item \textit{Dimensional homogeneity of a constant factor} (noscale Observation~3.1):
+        under a supplied dimensional assignment, a constant factor in the bound
+        $A_n \leq \cchi/\sqrt{\lambda_n}$ depending only on a parameter whose dimension lies outside
+        the span of the bound's ingredients is constant; a dimensionless factor rescales $\cchi$.
+        The Level~1 theorem of noscale version~1 is withdrawn.
       \end{enumerate}
 
     \subsection{Structural results}
@@ -516,8 +515,7 @@
 
         \item \textit{Level~2 scale determination} (noscale §5; open):
         that every emergent scale is uniquely determined as a functional of $\cchi$ and the
-        cascade is identified as an open structural problem, beyond the Level~1 rigidity proved
-        in noscale.
+        cascade is identified as an open structural problem; Level~1 is open as well.
       \end{enumerate}
 
     \subsection{Conditional results}
@@ -579,8 +577,8 @@
         \item \textit{Level~2 scale determination (noscale)}.
         That all emergent scales (masses, coupling constants, cosmological constant) are
         uniquely determined from $\cchi$ is open.
-        Only Level~1 (no independent scale can be introduced without breaking admissibility)
-        is proved.
+        Level~1 (no independent scale can be introduced without breaking admissibility) is open
+        too: its version~1 proof is withdrawn.
       \end{enumerate}
 
   \section{Open Deliverables}
@@ -602,8 +600,8 @@
 
     \textbf{Open deliverable 3: Level~2 scale determination.}
     Proving that every emergent scale is uniquely determined from $\cchi$ and the cascade
-    (noscale Level~2) would make the framework fully predictive with a single dimensional
-    free parameter.
+    (noscale Level~2) would make the scale sector predictive from $\cchi$ and the cascade.
+    It presupposes Level~1, which is open, and a dimensional assignment that the model does not supply.
     This requires a structural argument that no result in the corpus supplies.
 
   \section{Conclusion}
@@ -611,8 +609,9 @@
 
     This sub-programme examines the axiomatic primitive of the Cosmochrony corpus.
     ENI establishes the structural necessity of non-injectivity under explicit hypotheses,
-    while other constituent papers develop dimensional rigidity and a temporal ordering that is
-    conditional on the unestablished acyclicity hypothesis [H-acyc].
+    while other constituent papers develop a temporal ordering that is conditional on the
+    unestablished acyclicity hypothesis [H-acyc]; the dimensional rigidity claim of no-scale is withdrawn
+    and open.
     The finite $S_3$ countermodel shows that the Heisenberg group is not uniquely derived from
     A1--A3 and BI parity.  Supplying that group and a non-trivial central character permits
     Stone--von Neumann to identify the Heisenberg/Schr\"odinger representation $\pic$ on $\Hc$;

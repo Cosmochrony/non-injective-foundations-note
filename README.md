@@ -41,7 +41,7 @@ on those choices.
 | ENI Corollary 6 | Recursive non-injectivity; structural colour-confinement reading | proved / structural |
 | Foundation M | Immediate information loss; temporal order under [H-acyc]; carrier-selection obstruction (Theorem 5.7) | proved / conditional / proved |
 | HeisenbergStructure 2.1 | Finite \(S_3\) obstruction; Schrödinger representation once group and non-trivial central character are supplied; Weil action separate | obstruction proved / representation conditional / Weil action supplied |
-| noscale | No independent dimensional parameter beyond \(c_{\mathrm{BI}}\) | proved under stated hypotheses |
+| noscale | Level 1 rigidity (no independent dimensional parameter beyond \(c_{\mathrm{BI}}\)) withdrawn in version 2.0; dimensional-homogeneity observation under a supplied dimensional assignment | open (Level 1); observation proved |
 
 ## Open deliverables
 
