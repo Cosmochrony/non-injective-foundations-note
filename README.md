@@ -2,7 +2,7 @@
 
 Source for *The Non-Injective Foundations Sub-Programme (Presentation Note 5)*.
 
-The note is aligned with Foundation version 2.6 and HeisenbergStructure version 2.1.
+The note is aligned with Foundation version 2.7.1 and HeisenbergStructure version 2.1.
 The ENI no-go theorem establishes non-injectivity under explicit hypotheses. Within Foundation,
 A1 and A2 give immediate information loss along non-injective transitions; the arrow of time
 follows only under the acyclicity hypothesis [H-acyc], which is not established. Irreducibility
