@@ -38,7 +38,7 @@ on those choices.
 | Paper | Central output | Status |
 |---|---|---|
 | ENI | Non-injectivity as a necessity of genuine emergence | proved |
-| ENI Corollary 6 | Recursive non-injectivity; structural colour-confinement reading | proved / structural |
+| ENI Corollary 6 | Recursive non-injectivity; colour projection non-injective if colour-neutral observables emerge (colour neutrality is the premise; no colour stratum supplied) | proved / conditional |
 | Foundation M | Immediate information loss; temporal order under [H-acyc]; carrier-selection obstruction (Theorem 5.7) | proved / conditional / proved |
 | HeisenbergStructure 2.1 | Finite \(S_3\) obstruction; Schrödinger representation once group and non-trivial central character are supplied; Weil action separate | obstruction proved / representation conditional / Weil action supplied |
 | noscale | Single-scale admissibility (Level 1: no independent dimensional parameter beyond \(c_{\mathrm{BI}}\)): version 1 theorem withdrawn in version 2.0, question open; separately, an established dimensional-homogeneity observation under a supplied dimensional assignment | open |
